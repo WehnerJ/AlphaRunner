@@ -6,8 +6,19 @@ public class AlphaRunner extends SPIEL
     TEXT text; 
 
 public AlphaRunner {
+//Welt 
     Welt = new FIGUR();
-    Welt = 
+    Welt.verschiebenUm(0, 0);
+    Welt.macheStatisch();
+
+//Runner
     Alpha = new FIGUR();
+    Alpha.setzeMittelpunkt();
+    Alpha.fuegeZustandVonEinzelbildernHinzu();
+    Alpha.macheDynamisch();
+
+//Powerup
+
+//Gegner
 }
 }
