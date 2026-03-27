@@ -4,10 +4,22 @@ public class AlphaRunner extends SPIEL
 {
     FIGUR Welt, Alpha;
     
-    public Dinospiel(){
+    public AlphaRunner {
+//Welt 
+    Welt = new FIGUR();
+    Welt.verschiebenUm(0, 0);
+    Welt.macheStatisch();
 
-        verschiebeKamera(-40,0);
-    }
+//Runner
+    Alpha = new FIGUR();
+    Alpha.setzeMittelpunkt();
+    Alpha.fuegeZustandVonEinzelbildernHinzu();
+    Alpha.macheDynamisch();
+
+//Powerup
+
+//Gegner
+}
 
     @Override
     public void bildAktualisierungReagieren(double sekunden){
@@ -18,4 +30,5 @@ public class AlphaRunner extends SPIEL
             }
         }
     }
+
 }
