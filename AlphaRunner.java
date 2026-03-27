@@ -3,7 +3,8 @@ import java.util.ArrayList;
 public class AlphaRunner extends SPIEL
 {
     FIGUR Welt, Alpha;
-    
+    String p.taste;
+
     public AlphaRunner {
 //Welt 
     Welt = new FIGUR();
@@ -23,11 +24,27 @@ public class AlphaRunner extends SPIEL
 
     @Override
     public void bildAktualisierungReagieren(double sekunden){
-        if (Alpha.nenneAktivenZustand() != "tot"){
+        if (d.taste == "d"){
             Alpha.verschiebenUm (4*sekunden,0);
             if (Alpha.nenneMx() >= 30){
                 Alpha.verschiebeKamera(4*sekunden,0);
             }
+        }
+        else if (d.taste == "a"){
+            Alpha.verschiebenUm (-4*sekunden,0);
+            if (Alpha.nenneMx() >= 30){
+                Alpha.verschiebeKamera(-4*sekunden,0);
+            }
+        }
+    }
+
+    @Override
+    public void tasteReagieren(int taste){
+        if (taste == TASTE.D){
+            d.taste = taste
+        }
+        else if (taste == TASTE.A){
+            d.taste = taste
         }
     }
 
