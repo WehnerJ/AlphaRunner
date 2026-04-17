@@ -3,25 +3,26 @@ import java.util.ArrayList;
 public class AlphaRunner extends SPIEL
 {
     FIGUR Welt, Alpha;
-    String p.taste;
+    String d.taste;
 
     public AlphaRunner {
 //Welt 
-    Welt = new FIGUR();
-    Welt.verschiebenUm(0, 0);
-    Welt.macheStatisch();
+        Welt = new FIGUR();
+        Welt.verschiebenUm(0, 0);
+        Welt.macheStatisch();
 
 //Runner
-    Alpha = new FIGUR();
-    Alpha.setzeMittelpunkt();
-    Alpha.fuegeZustandVonEinzelbildernHinzu();
-    Alpha.macheDynamisch();
-
+        Alpha = new FIGUR();
+        Alpha.setzeMittelpunkt();
+        Alpha.fuegeZustandVonEinzelbildernHinzu();
+        Alpha.macheDynamisch();
+        
 //Powerup
 
 //Gegner
-}
+    }
 
+//Laufen
     @Override
     public void bildAktualisierungReagieren(double sekunden){
         if (d.taste == "d"){
@@ -41,10 +42,10 @@ public class AlphaRunner extends SPIEL
     @Override
     public void tasteReagieren(int taste){
         if (taste == TASTE.D){
-            d.taste = taste
+            d.taste = taste;
         }
         else if (taste == TASTE.A){
-            d.taste = taste
+            d.taste = taste;
         }
     }
 
