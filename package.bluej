@@ -80,6 +80,7 @@ dependency8.type=UsesDependency
 dependency9.from=Stabverbindung
 dependency9.to=KREIS
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=1001
 editor.fx.0.width=1328
 editor.fx.0.x=552
@@ -93,6 +94,21 @@ package.editor.width=1785
 package.editor.x=10
 package.editor.y=38
 package.frame.height=1010
+=======
+editor.fx.0.height=1010
+editor.fx.0.width=1936
+editor.fx.0.x=-8
+editor.fx.0.y=30
+objectbench.height=418
+objectbench.width=1896
+package.divider.horizontal=0.5997286295793759
+package.divider.vertical=0.5516877637130801
+package.editor.height=516
+package.editor.width=1772
+package.editor.x=0
+package.editor.y=114
+package.frame.height=1048
+>>>>>>> b379a9cd3903694fdefaf1588e4f68d1af790ec5
 package.frame.width=1936
 package.numDependencies=27
 package.numTargets=29
